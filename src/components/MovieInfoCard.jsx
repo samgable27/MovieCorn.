@@ -4,7 +4,7 @@ export const MovieInfoCard = ({ movieInfo }) => {
   return (
     <div className=" text-white relative tracking-normal whitespace-nowrap text-ellipsi overflow-hidden w-[50%]">
       <h1 className="text-white font-bold text-2xl pb-7">
-        Movie: <span className="text-orange-500">{movieInfo.Title}</span>
+        <span className="text-orange-500">{movieInfo.Title}</span>
       </h1>
       <p>IMDB Rating: {movieInfo.imdbRating}</p>
       <p>Year: {movieInfo.Year}</p>
