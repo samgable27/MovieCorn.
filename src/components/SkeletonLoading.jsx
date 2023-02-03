@@ -9,21 +9,6 @@ export const SkeletonLoading = () => {
         animation="pulse"
         variant="rounded"
       />
-      <Skeleton
-        sx={{ bgcolor: "grey.900" }}
-        animation="pulse"
-        variant="rounded"
-      />
-      <Skeleton
-        sx={{ bgcolor: "grey.900" }}
-        animation="pulse"
-        variant="rounded"
-      />
-      <Skeleton
-        sx={{ bgcolor: "grey.900" }}
-        animation="pulse"
-        variant="rounded"
-      />
     </>
   );
 };

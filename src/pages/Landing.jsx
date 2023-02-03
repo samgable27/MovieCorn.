@@ -16,10 +16,13 @@ export const Landing = ({ movieList, isLoading }) => {
           <MovieInfo
             selectedMovie={selectedMovie}
             setSelectedMovie={setSelectedMovie}
+            isLoading={isLoading}
           />
         )}
         {isLoading ? (
-          <Skeleton variant="circular"></Skeleton>
+          <div className="flex items-center justify-between">
+            <h1 className="text-4xl text-white font-bold">Loading movies...</h1>
+          </div>
         ) : (
           <div className="flex">
             {movieList?.map((movie, index) => (

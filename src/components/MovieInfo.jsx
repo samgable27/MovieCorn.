@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { MovieInfoCard } from "./MovieInfoCard";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
-export const MovieInfo = ({ selectedMovie, setSelectedMovie }) => {
+export const MovieInfo = ({ selectedMovie, setSelectedMovie, isLoading }) => {
   const [movieInfo, setMovieInfo] = useState([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const MovieInfo = ({ selectedMovie, setSelectedMovie }) => {
       <div className="flex items-center mx-auto mt-6">
         <img className="rounded-md" src={movieInfo.Poster} alt="" />
         <div className="m-16">
-          <MovieInfoCard movieInfo={movieInfo} />
+          <MovieInfoCard isLoading={isLoading} movieInfo={movieInfo} />
           <div
             onClick={() => setSelectedMovie()}
             className="text-gray-500 cursor-pointer "
